@@ -6,15 +6,15 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { defineComponent } from 'vue';
 import HelloWorld from './components/HelloWorld.vue';
 
-@Component({
+export default defineComponent({
+  name: 'App',
   components: {
-    HelloWorld,
-  },
-})
-export default class App extends Vue {}
+    HelloWorld
+  }
+});
 </script>
 
 <style>
